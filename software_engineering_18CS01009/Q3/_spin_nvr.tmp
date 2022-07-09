@@ -1,0 +1,9 @@
+never atMostOne {    /* !([] ((critical<=1))) */
+T0_init:
+	do
+	:: atomic { (! (((critical<=1)))) -> assert(!(! (((critical<=1))))) }
+	:: (1) -> goto T0_init
+	od;
+accept_all:
+	skip
+}

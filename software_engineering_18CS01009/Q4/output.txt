@@ -1,0 +1,202 @@
+ltl atMostOne: [] ((critical<=1))
+starting claim 1
+Never claim moves to line 4	[(1)]
+  2:	proc  1 (process:1) dekker_q4.pml:13 (state 1)	[flag[i] = 1]
+		flag[0] = 0
+		flag[1] = 1
+  4:	proc  1 (process:1) dekker_q4.pml:25 (state 13)	[else]
+  6:	proc  1 (process:1) dekker_q4.pml:25 (state 14)	[(1)]
+  8:	proc  1 (process:1) dekker_q4.pml:28 (state 17)	[critical = (critical+1)]
+		critical = 1
+ 10:	proc  1 (process:1) dekker_q4.pml:30 (state 18)	[critical = (critical-1)]
+		critical = 0
+ 12:	proc  1 (process:1) dekker_q4.pml:31 (state 19)	[turn = j]
+ 14:	proc  0 (process:1) dekker_q4.pml:13 (state 1)	[flag[i] = 1]
+		flag[0] = 1
+		flag[1] = 1
+ 16:	proc  1 (process:1) dekker_q4.pml:32 (state 20)	[flag[i] = 0]
+		flag[0] = 1
+		flag[1] = 0
+ 18:	proc  1 (process:1) dekker_q4.pml:13 (state 1)	[flag[i] = 1]
+		flag[0] = 1
+		flag[1] = 1
+ 20:	proc  1 (process:1) dekker_q4.pml:16 (state 2)	[(flag[j])]
+ 22:	proc  1 (process:1) dekker_q4.pml:18 (state 3)	[((turn==j))]
+ 24:	proc  1 (process:1) dekker_q4.pml:19 (state 4)	[flag[i] = 0]
+		flag[0] = 1
+		flag[1] = 0
+ 26:	proc  0 (process:1) dekker_q4.pml:25 (state 13)	[else]
+ 28:	proc  0 (process:1) dekker_q4.pml:25 (state 14)	[(1)]
+ 30:	proc  0 (process:1) dekker_q4.pml:28 (state 17)	[critical = (critical+1)]
+		critical = 1
+ 32:	proc  0 (process:1) dekker_q4.pml:30 (state 18)	[critical = (critical-1)]
+		critical = 0
+ 34:	proc  0 (process:1) dekker_q4.pml:31 (state 19)	[turn = j]
+		turn = 1
+ 36:	proc  1 (process:1) dekker_q4.pml:21 (state 5)	[((turn!=j))]
+ 38:	proc  1 (process:1) dekker_q4.pml:21 (state 6)	[flag[i] = 1]
+		flag[0] = 1
+		flag[1] = 1
+ 40:	proc  1 (process:1) dekker_q4.pml:28 (state 17)	[critical = (critical+1)]
+		critical = 1
+ 42:	proc  1 (process:1) dekker_q4.pml:30 (state 18)	[critical = (critical-1)]
+		critical = 0
+ 44:	proc  0 (process:1) dekker_q4.pml:32 (state 20)	[flag[i] = 0]
+		flag[0] = 0
+		flag[1] = 1
+ 46:	proc  0 (process:1) dekker_q4.pml:13 (state 1)	[flag[i] = 1]
+		flag[0] = 1
+		flag[1] = 1
+ 48:	proc  0 (process:1) dekker_q4.pml:16 (state 2)	[(flag[j])]
+ 50:	proc  1 (process:1) dekker_q4.pml:31 (state 19)	[turn = j]
+		turn = 0
+ 52:	proc  1 (process:1) dekker_q4.pml:32 (state 20)	[flag[i] = 0]
+		flag[0] = 1
+		flag[1] = 0
+ 54:	proc  1 (process:1) dekker_q4.pml:13 (state 1)	[flag[i] = 1]
+		flag[0] = 1
+		flag[1] = 1
+ 56:	proc  1 (process:1) dekker_q4.pml:16 (state 2)	[(flag[j])]
+ 58:	proc  1 (process:1) dekker_q4.pml:18 (state 3)	[((turn==j))]
+ 60:	proc  0 (process:1) dekker_q4.pml:23 (state 9)	[else]
+ 62:	proc  0 (process:1) dekker_q4.pml:23 (state 10)	[(1)]
+ 64:	proc  0 (process:1) dekker_q4.pml:28 (state 17)	[critical = (critical+1)]
+		critical = 1
+ 66:	proc  0 (process:1) dekker_q4.pml:30 (state 18)	[critical = (critical-1)]
+		critical = 0
+ 68:	proc  0 (process:1) dekker_q4.pml:31 (state 19)	[turn = j]
+		turn = 1
+ 70:	proc  0 (process:1) dekker_q4.pml:32 (state 20)	[flag[i] = 0]
+		flag[0] = 0
+		flag[1] = 1
+ 72:	proc  1 (process:1) dekker_q4.pml:19 (state 4)	[flag[i] = 0]
+		flag[0] = 0
+		flag[1] = 0
+ 74:	proc  1 (process:1) dekker_q4.pml:21 (state 5)	[((turn!=j))]
+ 76:	proc  1 (process:1) dekker_q4.pml:21 (state 6)	[flag[i] = 1]
+		flag[0] = 0
+		flag[1] = 1
+ 78:	proc  1 (process:1) dekker_q4.pml:28 (state 17)	[critical = (critical+1)]
+		critical = 1
+ 80:	proc  0 (process:1) dekker_q4.pml:13 (state 1)	[flag[i] = 1]
+		flag[0] = 1
+		flag[1] = 1
+ 82:	proc  0 (process:1) dekker_q4.pml:16 (state 2)	[(flag[j])]
+ 84:	proc  0 (process:1) dekker_q4.pml:18 (state 3)	[((turn==j))]
+ 86:	proc  1 (process:1) dekker_q4.pml:30 (state 18)	[critical = (critical-1)]
+		critical = 0
+ 88:	proc  1 (process:1) dekker_q4.pml:31 (state 19)	[turn = j]
+		turn = 0
+ 90:	proc  1 (process:1) dekker_q4.pml:32 (state 20)	[flag[i] = 0]
+		flag[0] = 1
+		flag[1] = 0
+ 92:	proc  1 (process:1) dekker_q4.pml:13 (state 1)	[flag[i] = 1]
+		flag[0] = 1
+		flag[1] = 1
+ 94:	proc  1 (process:1) dekker_q4.pml:16 (state 2)	[(flag[j])]
+ 96:	proc  0 (process:1) dekker_q4.pml:19 (state 4)	[flag[i] = 0]
+		flag[0] = 0
+		flag[1] = 1
+ 98:	proc  0 (process:1) dekker_q4.pml:21 (state 5)	[((turn!=j))]
+100:	proc  0 (process:1) dekker_q4.pml:21 (state 6)	[flag[i] = 1]
+		flag[0] = 1
+		flag[1] = 1
+102:	proc  0 (process:1) dekker_q4.pml:28 (state 17)	[critical = (critical+1)]
+		critical = 1
+104:	proc  0 (process:1) dekker_q4.pml:30 (state 18)	[critical = (critical-1)]
+		critical = 0
+106:	proc  0 (process:1) dekker_q4.pml:31 (state 19)	[turn = j]
+		turn = 1
+108:	proc  1 (process:1) dekker_q4.pml:23 (state 9)	[else]
+110:	proc  0 (process:1) dekker_q4.pml:32 (state 20)	[flag[i] = 0]
+		flag[0] = 0
+		flag[1] = 1
+112:	proc  0 (process:1) dekker_q4.pml:13 (state 1)	[flag[i] = 1]
+		flag[0] = 1
+		flag[1] = 1
+114:	proc  1 (process:1) dekker_q4.pml:23 (state 10)	[(1)]
+116:	proc  0 (process:1) dekker_q4.pml:16 (state 2)	[(flag[j])]
+118:	proc  0 (process:1) dekker_q4.pml:18 (state 3)	[((turn==j))]
+120:	proc  0 (process:1) dekker_q4.pml:19 (state 4)	[flag[i] = 0]
+		flag[0] = 0
+		flag[1] = 1
+122:	proc  1 (process:1) dekker_q4.pml:28 (state 17)	[critical = (critical+1)]
+		critical = 1
+124:	proc  1 (process:1) dekker_q4.pml:30 (state 18)	[critical = (critical-1)]
+		critical = 0
+126:	proc  1 (process:1) dekker_q4.pml:31 (state 19)	[turn = j]
+		turn = 0
+128:	proc  1 (process:1) dekker_q4.pml:32 (state 20)	[flag[i] = 0]
+		flag[0] = 0
+		flag[1] = 0
+130:	proc  1 (process:1) dekker_q4.pml:13 (state 1)	[flag[i] = 1]
+		flag[0] = 0
+		flag[1] = 1
+132:	proc  1 (process:1) dekker_q4.pml:25 (state 13)	[else]
+134:	proc  1 (process:1) dekker_q4.pml:25 (state 14)	[(1)]
+136:	proc  1 (process:1) dekker_q4.pml:28 (state 17)	[critical = (critical+1)]
+		critical = 1
+138:	proc  1 (process:1) dekker_q4.pml:30 (state 18)	[critical = (critical-1)]
+		critical = 0
+140:	proc  0 (process:1) dekker_q4.pml:21 (state 5)	[((turn!=j))]
+142:	proc  1 (process:1) dekker_q4.pml:31 (state 19)	[turn = j]
+144:	proc  1 (process:1) dekker_q4.pml:32 (state 20)	[flag[i] = 0]
+		flag[0] = 0
+		flag[1] = 0
+146:	proc  1 (process:1) dekker_q4.pml:13 (state 1)	[flag[i] = 1]
+		flag[0] = 0
+		flag[1] = 1
+148:	proc  1 (process:1) dekker_q4.pml:25 (state 13)	[else]
+150:	proc  1 (process:1) dekker_q4.pml:25 (state 14)	[(1)]
+152:	proc  1 (process:1) dekker_q4.pml:28 (state 17)	[critical = (critical+1)]
+		critical = 1
+154:	proc  0 (process:1) dekker_q4.pml:21 (state 6)	[flag[i] = 1]
+		flag[0] = 1
+		flag[1] = 1
+156:	proc  1 (process:1) dekker_q4.pml:30 (state 18)	[critical = (critical-1)]
+		critical = 0
+158:	proc  1 (process:1) dekker_q4.pml:31 (state 19)	[turn = j]
+160:	proc  1 (process:1) dekker_q4.pml:32 (state 20)	[flag[i] = 0]
+		flag[0] = 1
+		flag[1] = 0
+162:	proc  0 (process:1) dekker_q4.pml:28 (state 17)	[critical = (critical+1)]
+		critical = 1
+164:	proc  0 (process:1) dekker_q4.pml:30 (state 18)	[critical = (critical-1)]
+		critical = 0
+166:	proc  0 (process:1) dekker_q4.pml:31 (state 19)	[turn = j]
+		turn = 1
+168:	proc  0 (process:1) dekker_q4.pml:32 (state 20)	[flag[i] = 0]
+		flag[0] = 0
+		flag[1] = 0
+170:	proc  0 (process:1) dekker_q4.pml:13 (state 1)	[flag[i] = 1]
+		flag[0] = 1
+		flag[1] = 0
+172:	proc  0 (process:1) dekker_q4.pml:25 (state 13)	[else]
+174:	proc  0 (process:1) dekker_q4.pml:25 (state 14)	[(1)]
+176:	proc  1 (process:1) dekker_q4.pml:13 (state 1)	[flag[i] = 1]
+		flag[0] = 1
+		flag[1] = 1
+178:	proc  1 (process:1) dekker_q4.pml:16 (state 2)	[(flag[j])]
+180:	proc  1 (process:1) dekker_q4.pml:23 (state 9)	[else]
+182:	proc  1 (process:1) dekker_q4.pml:23 (state 10)	[(1)]
+184:	proc  1 (process:1) dekker_q4.pml:28 (state 17)	[critical = (critical+1)]
+		critical = 1
+186:	proc  0 (process:1) dekker_q4.pml:28 (state 17)	[critical = (critical+1)]
+		critical = 2
+spin: _spin_nvr.tmp:3, Error: assertion violated
+spin: text of failed assertion: assert(!(!((critical<=1))))
+Never claim moves to line 3	[assert(!(!((critical<=1))))]
+spin: trail ends after 187 steps
+#processes: 2
+		flag[0] = 1
+		flag[1] = 1
+		turn = 1
+		critical = 2
+187:	proc  1 (process:1) dekker_q4.pml:30 (state 18)
+		process(1):j = 0
+		process(1):i = 1
+187:	proc  0 (process:1) dekker_q4.pml:30 (state 18)
+		process(0):j = 1
+		process(0):i = 0
+187:	proc  - (atMostOne:1) _spin_nvr.tmp:2 (state 6)
+2 processes created
