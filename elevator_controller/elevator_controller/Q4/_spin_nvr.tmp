@@ -1,0 +1,27 @@
+never withinLimits {    /* !([] (((at>=0)) && ((at<=3)))) */
+T0_init:
+	do
+	:: atomic { (! ((((at>=0)) && ((at<=3))))) -> assert(!(! ((((at>=0)) && ((at<=3)))))) }
+	:: (1) -> goto T0_init
+	od;
+accept_all:
+	skip
+}
+never openedDoorCloses {    /* !([] ((! (! (closed))) || (<> (closed)))) */
+T0_init:
+	do
+	:: (! ((! (! (closed)))) && ! ((closed))) -> goto accept_S4
+	:: (1) -> goto T0_init
+	od;
+accept_S4:
+	do
+	:: (! ((closed))) -> goto accept_S4
+	od;
+}
+never outOfBound {    /* !(<> ((at>=4))) */
+accept_init:
+T0_init:
+	do
+	:: (! (((at>=4)))) -> goto T0_init
+	od;
+}

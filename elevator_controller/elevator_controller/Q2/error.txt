@@ -1,0 +1,238 @@
+  1:	proc  2 (elevator_button_input:1) elevator_Q2.pml:33 (state 1)	[elevator_buttons!go_0]
+		queue 1 (elevator_buttons): [go_0]
+  2:	proc  3 (controller:1) elevator_Q2.pml:42 (state 1)	[elevator_buttons?go_0]
+		queue 1 (elevator_buttons): 
+  3:	proc  3 (controller:1) elevator_Q2.pml:44 (state 2)	[((at==0))]
+		queue 1 (elevator_buttons): 
+  4:	proc  3 (controller:1) elevator_Q2.pml:45 (state 3)	[commands!open]
+		queue 1 (elevator_buttons): 
+  5:	proc  0 (elevator:1) elevator_Q2.pml:15 (state 1)	[commands?open]
+		queue 1 (elevator_buttons): 
+      Elevator: opened doors.
+  6:	proc  0 (elevator:1) elevator_Q2.pml:15 (state 2)	[printf('Elevator: opened doors.\\n')]
+		queue 1 (elevator_buttons): 
+  7:	proc  3 (controller:1) elevator_Q2.pml:46 (state 4)	[closed = 0]
+		queue 1 (elevator_buttons): 
+		closed = 0
+  8:	proc  3 (controller:1) elevator_Q2.pml:47 (state 5)	[commands!close]
+		queue 1 (elevator_buttons): 
+  9:	proc  0 (elevator:1) elevator_Q2.pml:16 (state 3)	[commands?close]
+		queue 1 (elevator_buttons): 
+      Elevator: closed doors.
+ 10:	proc  0 (elevator:1) elevator_Q2.pml:16 (state 4)	[printf('Elevator: closed doors.\\n')]
+		queue 1 (elevator_buttons): 
+ 11:	proc  2 (elevator_button_input:1) elevator_Q2.pml:33 (state 1)	[elevator_buttons!go_0]
+		queue 1 (elevator_buttons): [go_0]
+ 12:	proc  1 (floor_button_input:1) elevator_Q2.pml:24 (state 1)	[floor_buttons!call_0]
+		queue 3 (floor_buttons): [call_0]
+		queue 1 (elevator_buttons): [go_0]
+ 13:	proc  3 (controller:1) elevator_Q2.pml:48 (state 6)	[closed = 1]
+		queue 3 (floor_buttons): [call_0]
+		queue 1 (elevator_buttons): [go_0]
+		closed = 1
+ 14:	proc  3 (controller:1) elevator_Q2.pml:42 (state 1)	[elevator_buttons?go_0]
+		queue 3 (floor_buttons): [call_0]
+		queue 1 (elevator_buttons): 
+ 15:	proc  3 (controller:1) elevator_Q2.pml:44 (state 2)	[((at==0))]
+		queue 3 (floor_buttons): [call_0]
+		queue 1 (elevator_buttons): 
+ 16:	proc  3 (controller:1) elevator_Q2.pml:45 (state 3)	[commands!open]
+		queue 3 (floor_buttons): [call_0]
+		queue 1 (elevator_buttons): 
+ 17:	proc  0 (elevator:1) elevator_Q2.pml:15 (state 1)	[commands?open]
+		queue 3 (floor_buttons): [call_0]
+		queue 1 (elevator_buttons): 
+      Elevator: opened doors.
+ 18:	proc  0 (elevator:1) elevator_Q2.pml:15 (state 2)	[printf('Elevator: opened doors.\\n')]
+		queue 3 (floor_buttons): [call_0]
+		queue 1 (elevator_buttons): 
+ 19:	proc  3 (controller:1) elevator_Q2.pml:46 (state 4)	[closed = 0]
+		queue 3 (floor_buttons): [call_0]
+		queue 1 (elevator_buttons): 
+		closed = 0
+ 20:	proc  3 (controller:1) elevator_Q2.pml:47 (state 5)	[commands!close]
+		queue 3 (floor_buttons): [call_0]
+		queue 1 (elevator_buttons): 
+ 21:	proc  0 (elevator:1) elevator_Q2.pml:16 (state 3)	[commands?close]
+		queue 3 (floor_buttons): [call_0]
+		queue 1 (elevator_buttons): 
+      Elevator: closed doors.
+ 22:	proc  0 (elevator:1) elevator_Q2.pml:16 (state 4)	[printf('Elevator: closed doors.\\n')]
+		queue 3 (floor_buttons): [call_0]
+		queue 1 (elevator_buttons): 
+ 23:	proc  3 (controller:1) elevator_Q2.pml:48 (state 6)	[closed = 1]
+		queue 3 (floor_buttons): [call_0]
+		queue 1 (elevator_buttons): 
+		closed = 1
+ 24:	proc  3 (controller:1) elevator_Q2.pml:134 (state 99)	[floor_buttons?call_0]
+		queue 3 (floor_buttons): 
+		queue 1 (elevator_buttons): 
+ 25:	proc  3 (controller:1) elevator_Q2.pml:136 (state 100)	[((at==0))]
+		queue 3 (floor_buttons): 
+		queue 1 (elevator_buttons): 
+ 26:	proc  3 (controller:1) elevator_Q2.pml:137 (state 101)	[commands!open]
+		queue 3 (floor_buttons): 
+		queue 1 (elevator_buttons): 
+ 27:	proc  0 (elevator:1) elevator_Q2.pml:15 (state 1)	[commands?open]
+		queue 3 (floor_buttons): 
+		queue 1 (elevator_buttons): 
+      Elevator: opened doors.
+ 28:	proc  0 (elevator:1) elevator_Q2.pml:15 (state 2)	[printf('Elevator: opened doors.\\n')]
+		queue 3 (floor_buttons): 
+		queue 1 (elevator_buttons): 
+ 29:	proc  3 (controller:1) elevator_Q2.pml:138 (state 102)	[closed = 0]
+		queue 3 (floor_buttons): 
+		queue 1 (elevator_buttons): 
+		closed = 0
+ 30:	proc  3 (controller:1) elevator_Q2.pml:139 (state 103)	[commands!close]
+		queue 3 (floor_buttons): 
+		queue 1 (elevator_buttons): 
+ 31:	proc  0 (elevator:1) elevator_Q2.pml:16 (state 3)	[commands?close]
+		queue 3 (floor_buttons): 
+		queue 1 (elevator_buttons): 
+      Elevator: closed doors.
+ 32:	proc  0 (elevator:1) elevator_Q2.pml:16 (state 4)	[printf('Elevator: closed doors.\\n')]
+		queue 3 (floor_buttons): 
+		queue 1 (elevator_buttons): 
+ 33:	proc  2 (elevator_button_input:1) elevator_Q2.pml:33 (state 1)	[elevator_buttons!go_0]
+		queue 3 (floor_buttons): 
+		queue 1 (elevator_buttons): [go_0]
+ 34:	proc  1 (floor_button_input:1) elevator_Q2.pml:25 (state 2)	[floor_buttons!call_1]
+		queue 3 (floor_buttons): [call_1]
+		queue 1 (elevator_buttons): [go_0]
+ 35:	proc  3 (controller:1) elevator_Q2.pml:140 (state 104)	[closed = 1]
+		queue 3 (floor_buttons): [call_1]
+		queue 1 (elevator_buttons): [go_0]
+		closed = 1
+ 36:	proc  3 (controller:1) elevator_Q2.pml:42 (state 1)	[elevator_buttons?go_0]
+		queue 3 (floor_buttons): [call_1]
+		queue 1 (elevator_buttons): 
+ 37:	proc  3 (controller:1) elevator_Q2.pml:44 (state 2)	[((at==0))]
+		queue 3 (floor_buttons): [call_1]
+		queue 1 (elevator_buttons): 
+ 38:	proc  3 (controller:1) elevator_Q2.pml:45 (state 3)	[commands!open]
+		queue 3 (floor_buttons): [call_1]
+		queue 1 (elevator_buttons): 
+ 39:	proc  0 (elevator:1) elevator_Q2.pml:15 (state 1)	[commands?open]
+		queue 3 (floor_buttons): [call_1]
+		queue 1 (elevator_buttons): 
+      Elevator: opened doors.
+ 40:	proc  0 (elevator:1) elevator_Q2.pml:15 (state 2)	[printf('Elevator: opened doors.\\n')]
+		queue 3 (floor_buttons): [call_1]
+		queue 1 (elevator_buttons): 
+ 41:	proc  3 (controller:1) elevator_Q2.pml:46 (state 4)	[closed = 0]
+		queue 3 (floor_buttons): [call_1]
+		queue 1 (elevator_buttons): 
+		closed = 0
+ 42:	proc  3 (controller:1) elevator_Q2.pml:47 (state 5)	[commands!close]
+		queue 3 (floor_buttons): [call_1]
+		queue 1 (elevator_buttons): 
+ 43:	proc  0 (elevator:1) elevator_Q2.pml:16 (state 3)	[commands?close]
+		queue 3 (floor_buttons): [call_1]
+		queue 1 (elevator_buttons): 
+      Elevator: closed doors.
+ 44:	proc  0 (elevator:1) elevator_Q2.pml:16 (state 4)	[printf('Elevator: closed doors.\\n')]
+		queue 3 (floor_buttons): [call_1]
+		queue 1 (elevator_buttons): 
+ 45:	proc  3 (controller:1) elevator_Q2.pml:48 (state 6)	[closed = 1]
+		queue 3 (floor_buttons): [call_1]
+		queue 1 (elevator_buttons): 
+		closed = 1
+ 46:	proc  3 (controller:1) elevator_Q2.pml:153 (state 120)	[floor_buttons?call_1]
+		queue 3 (floor_buttons): 
+		queue 1 (elevator_buttons): 
+ 47:	proc  3 (controller:1) elevator_Q2.pml:160 (state 126)	[((at==0))]
+		queue 3 (floor_buttons): 
+		queue 1 (elevator_buttons): 
+ 48:	proc  3 (controller:1) elevator_Q2.pml:161 (state 127)	[commands!up]
+		queue 3 (floor_buttons): 
+		queue 1 (elevator_buttons): 
+ 49:	proc  0 (elevator:1) elevator_Q2.pml:17 (state 5)	[commands?up]
+		queue 3 (floor_buttons): 
+		queue 1 (elevator_buttons): 
+ 50:	proc  3 (controller:1) elevator_Q2.pml:162 (state 128)	[at = (at+1)]
+		queue 3 (floor_buttons): 
+		queue 1 (elevator_buttons): 
+		at = 1
+ 51:	proc  2 (elevator_button_input:1) elevator_Q2.pml:33 (state 1)	[elevator_buttons!go_0]
+		queue 3 (floor_buttons): 
+		queue 1 (elevator_buttons): [go_0]
+ 52:	proc  1 (floor_button_input:1) elevator_Q2.pml:24 (state 1)	[floor_buttons!call_0]
+		queue 3 (floor_buttons): [call_0]
+		queue 1 (elevator_buttons): [go_0]
+ 53:	proc  0 (elevator:1) elevator_Q2.pml:17 (state 6)	[assert((at!=3))]
+		queue 3 (floor_buttons): [call_0]
+		queue 1 (elevator_buttons): [go_0]
+      Elevator: moved up one floor.
+ 54:	proc  0 (elevator:1) elevator_Q2.pml:17 (state 7)	[printf('Elevator: moved up one floor.\\n')]
+		queue 3 (floor_buttons): [call_0]
+		queue 1 (elevator_buttons): [go_0]
+ 55:	proc  3 (controller:1) elevator_Q2.pml:163 (state 129)	[commands!open]
+		queue 3 (floor_buttons): [call_0]
+		queue 1 (elevator_buttons): [go_0]
+ 56:	proc  0 (elevator:1) elevator_Q2.pml:15 (state 1)	[commands?open]
+		queue 3 (floor_buttons): [call_0]
+		queue 1 (elevator_buttons): [go_0]
+      Elevator: opened doors.
+ 57:	proc  0 (elevator:1) elevator_Q2.pml:15 (state 2)	[printf('Elevator: opened doors.\\n')]
+		queue 3 (floor_buttons): [call_0]
+		queue 1 (elevator_buttons): [go_0]
+ 58:	proc  3 (controller:1) elevator_Q2.pml:164 (state 130)	[closed = 0]
+		queue 3 (floor_buttons): [call_0]
+		queue 1 (elevator_buttons): [go_0]
+		closed = 0
+ 59:	proc  3 (controller:1) elevator_Q2.pml:165 (state 131)	[commands!close]
+		queue 3 (floor_buttons): [call_0]
+		queue 1 (elevator_buttons): [go_0]
+ 60:	proc  0 (elevator:1) elevator_Q2.pml:16 (state 3)	[commands?close]
+		queue 3 (floor_buttons): [call_0]
+		queue 1 (elevator_buttons): [go_0]
+      Elevator: closed doors.
+ 61:	proc  0 (elevator:1) elevator_Q2.pml:16 (state 4)	[printf('Elevator: closed doors.\\n')]
+		queue 3 (floor_buttons): [call_0]
+		queue 1 (elevator_buttons): [go_0]
+ 62:	proc  3 (controller:1) elevator_Q2.pml:166 (state 132)	[closed = 1]
+		queue 3 (floor_buttons): [call_0]
+		queue 1 (elevator_buttons): [go_0]
+		closed = 1
+ 63:	proc  3 (controller:1) elevator_Q2.pml:42 (state 1)	[elevator_buttons?go_0]
+		queue 3 (floor_buttons): [call_0]
+		queue 1 (elevator_buttons): 
+ 64:	proc  3 (controller:1) elevator_Q2.pml:49 (state 7)	[else]
+		queue 3 (floor_buttons): [call_0]
+		queue 1 (elevator_buttons): 
+ 65:	proc  3 (controller:1) elevator_Q2.pml:51 (state 8)	[((at>0))]
+		queue 3 (floor_buttons): [call_0]
+		queue 1 (elevator_buttons): 
+ 66:	proc  3 (controller:1) elevator_Q2.pml:52 (state 9)	[commands!down]
+		queue 3 (floor_buttons): [call_0]
+		queue 1 (elevator_buttons): 
+ 67:	proc  0 (elevator:1) elevator_Q2.pml:18 (state 8)	[commands?down]
+		queue 3 (floor_buttons): [call_0]
+		queue 1 (elevator_buttons): 
+ 68:	proc  3 (controller:1) elevator_Q2.pml:53 (state 10)	[at = (at-1)]
+		queue 3 (floor_buttons): [call_0]
+		queue 1 (elevator_buttons): 
+		at = 0
+ 69:	proc  3 (controller:1) elevator_Q2.pml:54 (state 11)	[else]
+		queue 3 (floor_buttons): [call_0]
+		queue 1 (elevator_buttons): 
+ 70:	proc  2 (elevator_button_input:1) elevator_Q2.pml:33 (state 1)	[elevator_buttons!go_0]
+		queue 3 (floor_buttons): [call_0]
+		queue 1 (elevator_buttons): [go_0]
+spin: elevator_Q2.pml:18, Error: assertion violated
+spin: text of failed assertion: assert((at!=0))
+ 71:	proc  0 (elevator:1) elevator_Q2.pml:18 (state 9)	[assert((at!=0))]
+		queue 3 (floor_buttons): [call_0]
+		queue 1 (elevator_buttons): [go_0]
+spin: trail ends after 71 steps
+#processes: 4
+		queue 3 (floor_buttons): [call_0]
+		queue 1 (elevator_buttons): [go_0]
+		at = 0
+		closed = 1
+ 71:	proc  3 (controller:1) elevator_Q2.pml:56 (state 16)
+ 71:	proc  2 (elevator_button_input:1) elevator_Q2.pml:32 (state 5)
+ 71:	proc  1 (floor_button_input:1) elevator_Q2.pml:23 (state 5)
+ 71:	proc  0 (elevator:1) elevator_Q2.pml:18 (state 10)
+4 processes created
